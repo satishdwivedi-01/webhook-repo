@@ -1,11 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from db import events_collection
 
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return jsonify({"status": "Running"})
+def index():
+    return render_template("index.html")
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
