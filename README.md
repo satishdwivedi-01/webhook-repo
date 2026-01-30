@@ -56,8 +56,7 @@ Each event is stored as a single document in MongoDB with only the required fiel
   "to_branch": "target-branch",
   "timestamp": "ISO-8601 UTC timestamp"
 }
-
----
+```
 
 ## Prerequisites
 
