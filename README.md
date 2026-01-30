@@ -71,13 +71,16 @@ ngrok
 
 ## Setup Steps
 
-git clone <webhook-repo-url>
+git clone webhook-repo-url
+
 cd webhook-repo
 
 python -m venv venv
+
 source venv/bin/activate   # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
+
 python app.py
 
 The application will start at : http://localhost:5000
